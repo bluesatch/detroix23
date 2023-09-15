@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        * {box-sizing: border-box;}
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grandparent {
+            display: flex;
+            width: 1100px;
+            height: 1100px;
+            justify-content: flex-end;
+            background-color: pink;
+            color: white;
+            font-family: sans-serif;
+            font-size: 28px;
+            text-align: center;
+            line-height: 10;
+        }
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-evenly;
+            align-content: space-evenly; 
+            gap: 40px;
+            /* margin: 20px auto; */
+            width: 900px;
+            height: 900px;
+            background-color: yellow;
+            font-family: monospace;
+        }
+
+        .child {
+            width: 200px; 
+            height: 200px;
+        }
+
+        #child1 {
+            background-color: blue;
+            flex-grow: 2;
+        }
+
+        #child2 {
+            background-color: red;
+            flex-shrink: 3;
+        }
+
+        #child3 {
+            background-color: rebeccapurple;
+        }
+
+        #child4 {
+            background-color: green;
+            align-self: baseline;
+        }
+
+        #child5 {
+            background-color: darkgoldenrod;
+            /* flex-grow: 2; */
+        }
+
+        #child6 {
+            background-color: orange;
+        }
+
+    </style>
+    <title>Flexbox Demo</title>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child" id="child1">1</div>
+            <div class="child" id="child2">2</div>
+            <div class="child" id="child3">3</div>
+            <div class="child" id="child4">4</div>
+            <div class="child" id="child5">5</div>
+            <div class="child" id="child6">6</div>
+        </div>
+    </div>
+</body>
+</html>
